@@ -1,0 +1,15 @@
+# Ignore source TypeScript files and configuration files
+src/
+tsconfig.json
+
+# Ignore lock files and dependency directories
+package-lock.json
+node_modules/
+
+# Ignore git files
+.gitignore
+.git/
+
+# Ignore editor/IDE config files and cache
+.vscode/
+.DS_Store

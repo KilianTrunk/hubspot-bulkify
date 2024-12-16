@@ -1,0 +1,43 @@
+{
+  "name": "hubspot-bulkify",
+  "version": "1.0.0",
+  "description": "A utility for handling bulk data uploads to HubSpot with rate limiting, error handling, progress tracking, and detailed logging.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KilianTrunk/hubspot-bulkify.git"
+  },
+  "keywords": [
+    "hubspot",
+    "bulk",
+    "upload",
+    "rate-limiting",
+    "progress",
+    "error-handling",
+    "batch",
+    "logging"
+  ],
+  "author": "Kilian Trunk",
+  "license": "MIT",
+  "dependencies": {
+    "bottleneck": "^2.19.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.68",
+    "typescript": "^4.9.5"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  }
+}
