@@ -1,14 +1,15 @@
 {
   "name": "hubspot-bulkify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility for handling bulk data uploads to HubSpot with rate limiting, error handling, progress tracking, and detailed logging.",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp dist/index.js dist/index.mjs",
     "prepublishOnly": "npm run build"
   },
   "repository": {
